@@ -327,7 +327,7 @@ h6 {
   .navmenu .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
-    left: -100%;
+    left: 100%;
     visibility: visible;
   }
 }
@@ -356,7 +356,7 @@ h6 {
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
-    background-color: var(--nav-mobile-background-color);
+    background-color: black;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -365,7 +365,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    color: white;
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
@@ -1275,7 +1275,7 @@ section,
   position: absolute;
   left: 12px;
   right: 12px;
-  bottom: -100%;
+  bottom: 100%;
   z-index: 3;
   transition: all ease-in-out 0.5s;
   background: color-mix(in srgb, var(--background-color), transparent 10%);
