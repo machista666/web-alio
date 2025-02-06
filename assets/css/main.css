@@ -670,7 +670,7 @@ h6 {
   padding: 0 20px;
   margin: -8px -9px -8px 0;
   background: var(--accent-color);
-  color: var(--contrast-color);
+  color: var(--accent-color:);
   transition: 0.3s;
   border-radius: 0;
 }
