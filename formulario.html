@@ -12,8 +12,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Alio Corporativo Legal S.C.</title>
-  <meta name="description" content="Buscamos personas con excelente comunicación para formar parte de nuestro equipo de atención telefónica.">
-  <meta name="keywords" content="Alio, alio, Alio Corporativo Legal S.C., Alio Corporativo Legal">
+  <meta name="description" content="Nuestro corporativo está en Guadalajara, Jalisco y contamos con 8 sucursales más, cubriendo el bajío del país.">
+  <meta name="keywords" content="Alio, alio, Alio Corporativo Legal, Alio Corporativo Legal">
 
   <!-- Favicons -->
   <link href="assets/img/extras/icono.png" rel="icon" type="image/png" sizes="32x32">
@@ -32,12 +32,12 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="forms/main.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body class="portfolio-details-page">
+<body class="index-page">
 
-  <header id="header" class="header sticky-top">
+  <header id="header" class="header fixed-top">
 
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
@@ -60,112 +60,71 @@
     <div class="branding d-flex align-items-center">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="inicio.html" class="logo d-flex align-items-center">
+        <a href="index.html" class="logo d-flex align-items-center">
+
           <img src="assets/img/extras/icono.png" alt="">
           <h1 class="sitename">Alio</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="inicio.html">Inicio</a></li>
-            <li style="color: white" class="dropdown"><a><span>Bolsa de trabajo</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a class="active" href="callcenter.html"><span>Call Center</span></a></li>
-                <li><a href="juridico.html"><span>Jurídico</span></i></a>
-              </ul>
-            </li>
+            <li><a href="index.html">Inicio</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
       </div>
+
     </div>
+
   </header>
 
   <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade">
-      <div class="container">
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="inicio.html">Inicio</a></li>
-            <li class="current">Call Center</li>
-          </ol>
-        </nav>
-        <h1>¡ÚNETE A NUESTRO EQUIPO DE CALL CENTER!</h1>
-      </div>
-    </div><!-- End Page Title -->
-
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/extras/hero-bg.jpg" alt="" data-aos="fade-in">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/Bolsa de trabajo/callcenter/callcenter1.jpg" alt="">
+        <div class="container section-title justify-content-center" data-aos="fade-up">
+          <span>Formulario</span>
+          <h2>Formulario</h2>
+        </div>
+        
+        <div class="row gy-4 mt-1 justify-content-center">
+          <div class="col-lg-6">
+            <form action="forms/formulario.php" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+              <div class="row gy-4">
+  
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Nombre" required="">
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/Bolsa de trabajo/callcenter/callcenter2.jpg" alt="">
+  
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Correo" required="">
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/Bolsa de trabajo/callcenter/callcenter3.jpg" alt="">
+  
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Puesto" required="">
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/Bolsa de trabajo/callcenter/callcenter4.jpeg" alt="">
+  
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Comentarios" required=""></textarea>
                 </div>
-
+  
+                <div class="col-md-12 text-center">
+                  <div class="loading">Cargando...</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Tu mensaje ha sido enviado</div>
+  
+                  <button type="submit" class="submit-btn-custom">Enviar</button>
+                </div>
+  
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3 class="text-center">Requisitos y beneficios de unirte a nuestro equipo</h3>
-              <ul>
-                <li style="text-align: justify;"><strong>Requisitos</strong>: Experiencia en atención al cliente (preferible), habilidades de comunicación, disponibilidad para trabajar en horarios matutino y vespertino.</li>
-                <li style="text-align: justify;"><strong>Ofrecemos</strong>: Sueldo competitivo, bonificaciones por desempeño, oportunidades de crecimiento.</li>
-                <li style="text-align: justify;"><br>Buscamos personas con excelente comunicación para formar parte de nuestro equipo de atención telefónica. Si eres dinámico, proactivo y te gusta ayudar a otros, ¡te esperamos!</li>
-              </ul>
-            </div>
+            </form>
           </div>
         </div>
-      </div>
-    </section><!-- /Portfolio Details Section -->
 
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row justify-content-start">
-        <div class="col-lg-8">
-          <a href="#about" class="btn-get-started">Iniciemos</a>
-        </div>
       </div>
-    </div>
+
+    </section>
+    
   </main>
 
   <footer id="footer" class="footer position-relative dark-background">
@@ -174,7 +133,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6">
           <div class="footer-about">
-            <a href="inicio.html" class="logo sitename text-center">Alio Corporativo Legal S.C.</a>
+            <a href="index.html" class="logo sitename text-center">Alio Corporativo Legal S.C.</a>
             <div class="footer-contact pt-3">
               <p>Av. Topacio 2953, Col. Bosques de la Victoria</p>
               <p>Guadalajara, Jal.</p>
@@ -185,23 +144,10 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Servicios</h4>
-          <ul>
-            <li><a href="#services">Litigio</a></li>
-            <li><a href="#services">Consultoria Legal</a></li>
-            <li><a href="#services">Investigación Crediticia</a></li>
-            <li><a href="#services">Recuperación de Cartera</a></li>
-            <li><a href="#services">Administración de Cartera</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
           <h4>Links Útiles</h4>
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#about">Nosotros</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="https://alio.mx/aviso.pdf" target="_blank">Políticas de Privacidad</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="assets/docs/aviso.pdf" target="_blank">Políticas de Privacidad</a></li>
           </ul>
         </div>
 
@@ -209,6 +155,7 @@
           <h4>Bolsa de Trabajo</h4>
           <ul>
             <li><a href="juridico.html">Jurídico</a></li>
+            <li><a href="callcenter.html">Call Center</a></li>
           </ul>
         </div>
       </div>
@@ -236,7 +183,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -246,9 +193,14 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Start of HubSpot Embed Code -->
+    <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/48547158.js"></script> -->
+  <!-- End of HubSpot Embed Code -->
+
   <!-- Start of Collect.chat Embed Code -->
-  <script>(function(w, d) { w.CollectId = "6799104a9b94a96edb5a0567"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+    <script>(function(w, d) { w.CollectId = "67818cd1c45f1404d5f758c9"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
   <!-- End of Collect.chat Embed Code -->
+
 
 </body>
 
