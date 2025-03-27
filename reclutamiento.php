@@ -534,7 +534,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <li><a href="#services">Servicios</a></li>
             <li><a href="#about">Nosotros</a></li>
             <li><a href="formulario.html">Formulario</a></li>
-            <li><a href="assets/docs/aviso.pdf" target="_blank">Políticas de Privacidad</a></li>
+            <li><a href="aviso.pdf" target="_blank">Políticas de Privacidad</a></li>
           </ul>
         </div>
 
